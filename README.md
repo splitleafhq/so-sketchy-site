@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Run `lefthook install` once per clone with [lefthook](https://lefthook.dev) installed. The pre-push hook then runs the same checks as CI, and a failed check stops the push.
+Run `git config core.hooksPath .githooks` once per clone. The pre-push hook then runs `scripts/check`, the same checks as CI, and a failed check stops the push.
 
 ## Pages
 
