@@ -33,6 +33,8 @@ travels in iMessage URLs. The site must not leak it.
 Push `main`. GitHub Actions builds and deploys to Pages. Custom domain via
 `public/CNAME`. DNS and repo settings live outside the codebase.
 
+CI's `deploy-merged` job also starts `deploy.yml` after it auto-merges a Dependabot pull request, since a merge made by CI triggers no push run.
+
 ## Documentation
 
 All writes to `CLAUDE.md`, `README.md`, `docs/**`, and `.claude/**/*.md` route
